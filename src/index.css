@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Redefine Blue to the gorgeous modern requested hex code #39B1D1 */
+  --color-blue-50: #ecfafd;
+  --color-blue-100: #d5f2fa;
+  --color-blue-200: #afe4f3;
+  --color-blue-300: #7fd1ea;
+  --color-blue-400: #4dbedd;
+  --color-blue-500: #39b1d1; /* Exact custom color requested */
+  --color-blue-600: #39b1d1; /* Exact custom color requested for standard button actions */
+  --color-blue-700: #1f9dbc; /* Perfect rich premium hover accent shadow */
+  --color-blue-800: #197f98;
+  --color-blue-900: #146478;
+  --color-blue-950: #0b3742;
+  
+  /* Redefine Green / Emerald / Teal to an exquisite Forest Sage */
+  --color-emerald-50: #f0fbf7;
+  --color-emerald-100: #daf6ec;
+  --color-emerald-200: #b9ebd9;
+  --color-emerald-300: #88dbbf;
+  --color-emerald-400: #52c29d;
+  --color-emerald-500: #2ca67f;
+  --color-emerald-600: #208665;
+  --color-emerald-700: #1a6c53;
+  --color-emerald-800: #175643;
+  --color-emerald-900: #144839;
+  --color-emerald-950: #0a2820;
+
+  /* Give the page a gorgeous warm sand/stone gray palette so it is incredibly soft and premium */
+  --color-gray-50: #fafaf9;
+  --color-gray-100: #f5f5f4;
+  --color-gray-200: #e7e5e4;
+  --color-gray-300: #d6d3d1;
+  --color-gray-400: #a8a29e;
+  --color-gray-500: #78716c;
+  --color-gray-600: #57534e;
+  --color-gray-700: #44403c;
+  --color-gray-800: #292524;
+  --color-gray-900: #1c1917;
+  --color-gray-950: #0c0a09;
+
+  /* Slate is refined into a cool charcoal tone */
+  --color-slate-50: #f5f7f9;
+  --color-slate-100: #ebeff2;
+  --color-slate-200: #cfdae0;
+  --color-slate-300: #a9becc;
+  --color-slate-400: #7ba0b8;
+  --color-slate-500: #5e829a;
+  --color-slate-600: #4a687f;
+  --color-slate-700: #3f5569;
+  --color-slate-800: #344654;
+  --color-slate-900: #212c36;
+  --color-slate-950: #0f151b;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-gray-50);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Dynamic Superhero Animations */
+@keyframes mascot-float-gentle {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-5px) rotate(1.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes mascot-jet-gentle {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(1.5px, -1.5px) rotate(0.4deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes mascot-jet-turbulent {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(1.8px, -1.8px) rotate(0.6deg); }
+  50% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+  75% { transform: translate(1.5px, 1.5px) rotate(0.3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes mascot-float-noble {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(-1.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes mascot-float-extreme {
+  0% { transform: translateY(0px) scale(1) rotate(0deg); }
+  50% { transform: translateY(-11px) scale(1.05) rotate(3deg); }
+  100% { transform: translateY(0px) scale(1) rotate(0deg); }
+}
+
+

@@ -1,0 +1,10 @@
+{
+  "name": "ITP IELTS TOEFL PTE prep",
+  "description": "An interactive prep and learning platform for IELTS, TOEFL, and PTE with realistic mock tests, real-time AI key-point feedback, score band estimator, and flashcards.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
